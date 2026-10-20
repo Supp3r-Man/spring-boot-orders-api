@@ -237,8 +237,7 @@ whole Spring suite runs once per mutation, so expect roughly 25 to 40 minutes.
 - Catalogue list is not paginated; no item update or delete; no payment integration (`PAID` is just a state).
 - Single instance only; no distributed concerns, no events when status changes.
 - The concurrency tests are real-thread tests against H2 with MockMvc, not a load test.
-- CI: the workflow (`.github/workflows/ci.yml`, `mvn -q -B verify` on Java 17 and 21) is included, but CI has not been
-  confirmed from this directory; check the Actions tab.
+- CI: the workflow (`.github/workflows/ci.yml`, `mvn -q -B verify` on Java 17 and 21) is included. CI ran green on the first run on GitHub Actions (Java 17 and 21, ubuntu-latest, 2026-10-20).
 
 ## Layout
 
